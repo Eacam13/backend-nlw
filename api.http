@@ -1,0 +1,32 @@
+POST http://localhost:3333/events
+Content-Type:  application/json
+
+{
+    "title": "Festival Html?CSS",
+    "details": "Evento para devs frontend com potencial de dev!",
+    "maximumAttendees": 90
+}
+
+###
+
+POST http://localhost:3333/events/7ea1e8d3-eb7b-43a9-b7d5-05fc8216952d/attendees
+Content-Type: application/json
+
+{
+    "name": "Celio Almeida",
+    "email": "almeida@gmail.com"
+}
+
+###
+GET http://localhost:3333/events/7ea1e8d3-eb7b-43a9-b7d5-05fc8216952d
+
+###
+GET http://localhost:3333/attendees/1/badge
+
+
+###
+GET http://localhost:3333/attendees/1/check-in
+
+
+###
+GET http://localhost:3333/events/7ea1e8d3-eb7b-43a9-b7d5-05fc8216952d/attendees?query=oli
